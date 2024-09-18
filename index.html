@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="XCOM Corporation">
+    <meta name="description" content="Welcome to XCOM Corporation, your trusted partner in construction management, general contracting, and design-build services.">
+    <meta name="keywords" content="XCom, Construction, Contracting, Building, Design">
+    <meta name="author" content="Sam Scheer">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:100,200,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+    <title>XCOM Corporation</title>
+</head>
+<style>
+.navbar {padding:5px;background:#000;height:80px;width:100%;position:sticky;top:0;left:0;}
+.navbar a {color:#222;text-decoration:none;}
+.navdiv {display:flex;width:100%;justify-content:space-between;align-items:center;margin:0 10%;font-family:Comfortaa;}
+.navdiv {}
+.navlogo {display:none;max-height:110px;width:auto;}
+.navtitle {font-size:1.5em;font-weight:bold;color:#e1c340;margin-bottom:0px;}
+.sub-menu {opacity:0;visibility:hidden;display:none;position:absolute;top:100%;left:unset;right:10%;padding:0;z-index:100;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;-ms-transform: translateY(-100%);-webkit-transform:translateY(-100%);transform: translateY(-100%);}
+.sub-menu.open {display: grid;}
+.navbutton:hover>.sub-menu {opacity:1;visibility:visible;-ms-transform: translateY(0px);-webkit-transform: translateY(0px);transform: translateY(0px);}
+.sub-menu>li {position:relative;display:flex;grid-column:1/ -1;transition:all 0.2s;align-items:center;background:#333;padding:10px;transition: background 0.3s;}
+.sub-menu li:hover {background: #444;}
+.sub-menu>li>a {display: flex;align-items: center;height: 100%;background: transparent;color: #fff;font-weight: 700;font-family: Comfortaa,sans-serif;letter-spacing: normal;white-space: nowrap;text-decoration: none;text-transform: none;transition: all 0.3s ease-in;transition: color 0.3s;}
+.banner {padding:15% 5%;background-image: url("/images/mountains.jpg");background-size:cover;background-position:center;box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);}
+.banner-content>h1 {font-size:4em;color:#fff;font-weight:bold;text-align:center;font-family:Comfortaa;}
+.banner-content>h2 {font-size:2em;color:#fff;text-align:center;font-family:Comfortaa;}
+.button {display:flex;height:50px;background:#e1c340;border-radius:25px;padding:0px 18px;align-items: center;justify-content: center;color:#000;font-family:Comfortaa;}
+.inforow {display:flex;}
+.inforowinner {display:flex;width:100%;justify-content:space-evenly;align-items:center;flex:1 0 auto;}
+.infohalf {width:50%;padding:1%;}
+.infotext {display:flex;flex-direction:column;align-items:flex-end;margin-right:9%;font-family:Comfortaa;}
+.infotextright {display:flex;flex-direction:column;align-items:flex-start;margin-left:9%;font-family:Comfortaa;}
+.infologo {width:100%;max-width:450px;margin-left:9%;}
+.infoimg {width:100%;padding:3%;}
+.footer {background:#000;font-family:Comfortaa;}
+.contactinfo {max-width:900px;margin:auto;padding:10px;color:#e1c340;font-family:Comfortaa;}
+@media (min-width: 768px) {
+  .sub-menu {display: grid; }
+  .navbutton:hover .sub-menu {opacity: 1;visibility: visible;transform: translateY(0);}
+}
+@media screen and (max-width: 1050px) {
+.infologo {margin-left:auto;}
+}
+@media screen and (max-width: 750px) {
+.navdiv {margin:6%;}
+.navbar {height:auto;}
+.navtitle {font-size:1.2em;}
+.button {display:flex;height:auto;padding:8px 10px;}
+.banner {padding:25% 5%;}
+.banner-content>h1 {font-size:3em;}
+.banner-content>h2 {font-size:1.7em;}
+.inforowinner {flex-direction:column;}
+.infohalf {width:100%;text-align:center;}
+.infotext , .infotextright {align-items:center;margin-right:auto;margin-left:auto;padding:5%;text-align: left;}
+}
+@media screen and (max-width: 600px) {
+.hidden-xs {display: none !important;}
+}
+@media screen and (min-width: 601px) {
+.visible-xs {display: none !important;}
+}
+</style>
+
+<script>
+function toggleMenu() {
+  document.getElementById("sub-menu").classList.toggle("open"); 
+}
+</script>
+
+<body>
+<container style="">
+<nav class="navbar">
+    <div class="navdiv">
+        <a href="https://pathwaytolifesuccess.com/"><img class="navlogo" title="XCOM Corporation Logo" src="/images/XCOM-Corporation-Logo.jpg" /><h1 class="navtitle">XCOM Corporation</h1></a>
+        <div class="navbutton"><a class="button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
+            <ul id="sub-menu" class="sub-menu">
+              <li><a href="/services">Services</a></li>
+              <li><a href="/testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="banner">
+    <div class="banner-content">
+        <h1>XCOM Corporation</h1>
+        <h2>BRINGING YOUR VISION TO LIFE</h2>
+    </div>
+</div>
+<div class="inforow">
+    <div class="inforowinner">
+        <div class="infohalf">
+        <div class="infotext">
+            <h2>Welcome to XCOM Corporation</h2>
+            <p>We are your trusted partner in construction management, general contracting, and design-build services. With a commitment to excellence and a track record of delivering high-quality projects on time and within budget, we streamline the entire building process from concept to completion. Whether you're looking to renovate, expand, or build from the ground up, our experienced team ensures every detail is expertly managed, providing you with a seamless and stress-free experience. Let us bring your vision to life with precision, efficiency, and unmatched expertise.</p>
+        </div>
+        </div>
+        <div class="infohalf" style="background:#000;">
+            <img class="infologo" title="Pathway to life Success Logo" src="/images/pathway-to-life-success.png" />
+        </div>
+    </div>
+</div>
+<div class="inforow" style="margin-top:25px;">
+    <div class="inforowinner">
+        <div class="infohalf" style="">
+            <img class="infoimg" title="Entrepreneurial Development Leads to Growth" src="/images/entrepreneur.jpg" />
+        </div>
+        <div class="infohalf">
+        <div class="infotextright">
+            <h2>Construction Management</h2>
+            <p>We offer comprehensive oversight and coordination from project inception to completion. Our dedicated team of experts ensures that every phase of your project is executed with precision, keeping timelines, budgets, and quality standards on track. We work closely with architects, engineers, and subcontractors, acting as your advocate to streamline communication, mitigate risks, and deliver your project on time and within budget. With our proactive approach, we anticipate challenges before they arise, ensuring a seamless construction process that meets your vision.</p>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="inforow" style="margin-top:25px;">
+    <div class="inforowinner">
+        <div class="infohalf">
+        <div class="infotext">
+            <h2>General Contractor</h2>
+            <p>As your trusted general contractor, we bring your project to life with unparalleled craftsmanship and attention to detail. We manage all aspects of the construction process, from securing permits and coordinating trades to ensuring compliance with building codes and safety regulations. Our experienced team takes pride in delivering high-quality work on every project, whether it's a small renovation or a large-scale commercial build. We maintain open lines of communication throughout the process, so you can be confident that your project is progressing as planned, with no surprises.</p>
+        </div>
+        </div>
+        <div class="infohalf" style="">
+            <img class="infoimg" title="Balance in Life - Rock Tower" src="/images/rock-tower-jeremy-thomas-unsplash.jpg" />
+        </div>
+    </div>
+</div>
+<div class="inforow" style="margin-top:25px;">
+    <div class="inforowinner">
+        <div class="infohalf" style="">
+            <img class="infoimg" title="Leadership Coaching" src="/images/leading-group-jehyun-sung-unsplash.jpg" />
+        </div>
+        <div class="infohalf">
+        <div class="infotextright">
+            <h2>Design/Build</h2>
+            <p>Our design/build services provide a streamlined, integrated approach to your construction project, combining the creative expertise of our design team with the technical knowledge of our builders. From the initial concept through final construction, we handle every aspect of the project, ensuring that your vision is realized with efficiency and excellence. This collaborative approach minimizes the risk of delays and cost overruns, as our designers and builders work together from the start to create innovative solutions that meet your budget and timeline. With us, you receive a single point of contact for the entire process, making your construction journey simpler, more efficient, and more enjoyable.</p>
+        </div>
+        </div>
+    </div>
+</div>
+<div id="contact" class="footer">
+    <div class="contactinfo">
+        <span style="font-size:1.5em;font-weight:bold">CONTACT</span>
+        <hr style="border-color:#111;width:12%;margin-left:5px;margin-bottom:0px;">
+        <br>
+        <span>Tel: <a href="tel:+17797045177">(779) 704-5177</a></span>
+        <br>
+        <span>Email: <a href ="mailto:office@xcomcorporation.com">office@xcomcorporation.com</a></span>
+    </div>
+</div>
+
+</container>
+
+</body>
+</html>
